@@ -60,7 +60,8 @@ header {
 header h1 {
 	/*float: left;*/
 	margin: 0;
-	/*padding: 38px 0;*/
+	padding: 10px;
+    border-bottom: 3px solid #77a466;
 
 }
 
@@ -74,14 +75,15 @@ header nav {
 }
 header nav ul {
 	margin: 0;
-	padding: 0;
+	padding: 10px;
+	list-style: none;
 
 }
 header nav ul li {
 	text-transform: uppercase;
 	font-weight: 700;
 	font-size: .875em;
-	padding: 0 10px;
+	padding: 10px;
 	/*display: inline;*/
 }
 header nav ul li a{
@@ -90,6 +92,7 @@ header nav ul li a{
 }
 
 /*The widths are in a percentage!*/
+/************flex for top and bottom sections ****/
 .top-section,
 .bottom-section {
 	/*margin: 0 auto;*/
@@ -101,10 +104,7 @@ header nav ul li a{
     height: auto;
  }
 
- .bottom-section {
- 	border-top: 1px solid #eee;
- }
-
+/********************top section****image and welcome****/ 
 .main-image {
 	height: auto;
 	/*float: left;*/
@@ -129,13 +129,17 @@ header nav ul li a{
 	line-height: 1.5em;
 }
 
+/*******************************bottom section with 3 sections**********/
+ .bottom-section {
+ }
+
 .section-one,
 .section-two,
 .section-three {
-	width: 33%;
+	/*width: 33%; commented this so section-2 would be full width*/
 	height: auto;
-	/*float: left;*/
-
+	min-width: 275px;
+	border-top: 1px solid #eee;
 }
 
 .section-one h3 {
@@ -153,6 +157,7 @@ header nav ul li a{
 }
 .section-three {
 	align-self: flex-start;
+	justify-content:flex-start;
 }
 
 .menu {
