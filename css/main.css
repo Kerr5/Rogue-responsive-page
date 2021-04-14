@@ -213,6 +213,10 @@ footer span {
 	header nav ul li {
 	  display: block;
 	}
+	.bottom-section {
+		/*not sure what I am missing here*/
+	}
+
 	.section-one,
 	.section-two,
     .section-three {
@@ -243,6 +247,10 @@ footer span {
     header {
       justify-content:space-between;
       	/*border-bottom: 3px solid #77a466; not needed already up top line 52*/
+    }
+
+    nav {
+       /* messed up the formatting*/
     }
 
 	header h1 {
