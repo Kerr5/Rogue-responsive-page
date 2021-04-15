@@ -37,6 +37,7 @@ h2 {
 }
 h3 {
 	font-size: .75em;
+	padding-left: 30px;
 }
 
 p {
@@ -55,10 +56,10 @@ header {
     justify-content: center;
     align-items: center;
     flex-flow: wrap;
+    text-align: center;
 }
 
 header h1 {
-	/*float: left;*/
 	margin: 0;
 	padding: 10px;
     border-bottom: 3px solid #77a466;
@@ -69,10 +70,6 @@ header h1 span {
 	color: #77a466;
 }
 
-header nav {
-	/*float: right;*/
-	/*padding: 46px 0;*/
-}
 header nav ul {
 	margin: 0;
 	padding: 10px;
@@ -84,8 +81,8 @@ header nav ul li {
 	font-weight: 700;
 	font-size: .875em;
 	padding: 10px;
-	/*display: inline;*/
 }
+
 header nav ul li a{
 	text-decoration: none;
 	color:#77a466;
@@ -95,8 +92,6 @@ header nav ul li a{
 /************flex for top and bottom sections ****/
 .top-section,
 .bottom-section {
-	/*margin: 0 auto;*/
-	/*clear: both;*/
 	display: flex;
     justify-content: center;
     align-items: center;
@@ -107,8 +102,8 @@ header nav ul li a{
 /********************top section****image and welcome****/ 
 .main-image {
 	height: auto;
-	/*float: left;*/
 }
+
 .main-image img {
 	width: 100%;
 	border-bottom: 3px solid #77a466;
@@ -131,30 +126,21 @@ header nav ul li a{
 
 /*******************************bottom section with 3 sections**********/
  .bottom-section {
+ 	flex-grow: initial;
  }
 
 .section-one,
 .section-two,
 .section-three {
-	/*width: 33%; commented this so section-2 would be full width*/
 	height: auto;
-	min-width: 275px;
 	border-top: 1px solid #7F7E7E;
 	width: 100%;
 }
 
-.section-one h3 {
-	padding: 10px 0;
-}
-.section-one {
-	padding-left: 28px;
-	/*put this padding to get it to aline with other sections*/
-}
-
 .section-two h3,
 .section-three h3 {
-	padding: 10px 30px;
 }
+
 .section-three {
 	align-self: flex-start;
 	justify-content:flex-start;
@@ -162,7 +148,7 @@ header nav ul li a{
 
 .menu {
 	list-style: none;
-	padding: 0;
+	padding: 30;
 }
 .menu li {
 	padding: 10px 0;
@@ -183,14 +169,14 @@ header nav ul li a{
 /*The widths are in a percentage!*/
 footer {
 	height: auto;
-	border-top: 3px solid #7F7E7E;
+	border-top: 1px solid #7F7E7E;
 	margin: 0 auto;
-	/*clear: both;*/
 	text-align: center;
 	display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: wrap;
+    width: 100%;
 }
 footer span {
 	font-family: 'Galada', cursive;
@@ -203,27 +189,19 @@ footer span {
 
 @media all and (min-width: 768px) {
 	/* tablet styles here*/
-	header {
-	  /*justify-content: center;*/
-}
+
 	header h1 {
       width: 100%;
-      /*justify-content: center;heading soesn't center*/
 	}
 	header nav ul li {
 	  display: block;
 	}
-	.bottom-section {
-		/*not sure what I am missing here*/
-	}
-
+	
 	.section-one,
 	.section-two,
     .section-three {
-	   /*width: 33%; commented this so section-2 would be full width*/
 	   height: auto;
-	   width: 30%;
-	   min-width: 0px;
+	   width: 33%;
 	   align-self: flex-start;
     }
 
@@ -245,12 +223,7 @@ footer span {
     }
 
     header {
-      justify-content:space-between;
-      	/*border-bottom: 3px solid #77a466; not needed already up top line 52*/
-    }
-
-    nav {
-       /* messed up the formatting*/
+      justify-content:space-between;    
     }
 
 	header h1 {
