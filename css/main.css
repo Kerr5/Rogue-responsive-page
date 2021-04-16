@@ -1,188 +1,185 @@
 html {
-	font-size: 16px;
+   font-size: 16px;
 }
 
 body {
-	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: wrap;
-    font-size: 1em;
+	  font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-flow: wrap;
+   font-size: 1em;
 }
 
 .container{
 	/*max-width: 1200px;*/
-	margin: 0 auto;
-	max-width: 1200px;
-	width: 90%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-flow: wrap;
+	  margin: 0 auto;
+	  max-width: 1200px;
+	  width: 90%;
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+	  flex-flow: wrap;
 }
 
 h1,
 h2,
 h3 {
-	color: black;
-	text-transform: uppercase;
-	font-weight: 700;
+	  color: black;
+	  text-transform: uppercase;
+	  font-weight: 700;
 }
 h1 {
-	font-size: 1.875em;
+	  font-size: 1.875em;
 }
 h2 {
-	font-size: 1.125em;
+	  font-size: 1.125em;
 }
 h3 {
-	font-size: .75em;
-	padding-left: 30px;
+	  font-size: .75em;
+	  padding-left: 30px;
 }
 
 p {
-	font-size: .875px;
-	line-height: 1.3em;
-    padding: 0 30px;
+	  font-size: .875px;
+	  line-height: 1.3em;
+   padding: 0 30px;
 }
 
 /*************  header *****The widths are in a percentage!*/
 header {
-	height: auto;
-	width: 100%;
-	border-bottom: 3px solid #77a466;
-	margin: 0 auto;
-	display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: wrap;
-    text-align: center;
+	  height: auto;
+	  width: 100%;
+	  border-bottom: 3px solid #77a466;
+	  margin: 0 auto;
+	  display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-flow: wrap;
+   text-align: center;
 }
 
 header h1 {
-	margin: 0;
-	padding: 10px;
-    border-bottom: 3px solid #77a466;
-    width: 100%;
+	  margin: 0;
+	  padding: 10px;
+   border-bottom: 3px solid #77a466;
+   width: 100%;
 }
 
 header h1 span {
-	color: #77a466;
+	  color: #77a466;
 }
 
 header nav ul {
-	margin: 0;
-	padding: 10px;
-	list-style: none;
+	  margin: 0;
+	  padding: 10px;
+	  list-style: none;
 }
 
 header nav ul li {
-	text-transform: uppercase;
-	font-weight: 700;
-	font-size: .875em;
-	padding: 10px;
+	  text-transform: uppercase;
+	  font-weight: 700;
+	  font-size: .875em;
+	  padding: 10px;
 }
 
 header nav ul li a{
-	text-decoration: none;
-	color:#77a466;
+	  text-decoration: none;
+	  color:#77a466;
 }
 
 /*The widths are in a percentage!*/
 /************flex for top and bottom sections ****/
 .top-section,
 .bottom-section {
-	display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: wrap;
-    height: auto;
- }
+	  display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-flow: wrap;
+   height: auto;
+}
 
 /********************top section****image and welcome****/ 
 .main-image {
-	height: auto;
+	  height: auto;
 }
 
 .main-image img {
-	width: 100%;
-	border-bottom: 3px solid #77a466;
+	  width: 100%;
+	  border-bottom: 3px solid #77a466;
 }
 
 .main-title {
-	height: auto;
-	/*float: left;*/
+	  height: auto;
 }
 .main-title h2 {
-	text-align: left;
-	padding: 5px 0;
-	color: #77a466;
+	  text-align: left;
+	  padding: 5px 0;
+	  color: #77a466;
 }
 .main-title p {
-	padding: 0;
-	font-size: 1em;
-	line-height: 1.5em;
+	  padding: 0;
+	  font-size: 1em;
+	  line-height: 1.5em;
 }
 
 /*******************************bottom section with 3 sections**********/
- .bottom-section {
- 	flex-grow: initial;
- }
+.bottom-section {
+ 	 flex-grow: initial; 
+ 	 /*don't know if this does anything*/
+}
 
 .section-one,
 .section-two,
 .section-three {
-	height: auto;
-	border-top: 1px solid #7F7E7E;
-	width: 100%;
-}
-
-.section-two h3,
-.section-three h3 {
+	  height: auto;
+	  border-top: 1px solid #7F7E7E;
+	  width: 100%;
 }
 
 .section-three {
-	align-self: flex-start;
-	justify-content:flex-start;
+			align-self: flex-start;
+			justify-content:flex-start;
 }
 
 .menu {
-	list-style: none;
-	padding: 30;
+			list-style: none;
+			padding: 30;
 }
 .menu li {
-	padding: 10px 0;
-	color:#77a466;
+			padding: 10px 0;
+			color:#77a466;
 }
 
 .reviews {
-	color: #333;
-	font-size: 1em;
-	line-height: 1.3em;
+			color: #333;
+			font-size: 1em;
+			line-height: 1.3em;
+   padding-right: 15px;
 }
 
 .address {
-	font-size: 1em;
-	line-height: 1.5em;
+			font-size: 1em;
+			line-height: 1.5em;
 }
 
 /*The widths are in a percentage!*/
 footer {
-	height: auto;
-	border-top: 1px solid #7F7E7E;
-	margin: 0 auto;
-	text-align: center;
-	display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: wrap;
-    width: 100%;
+			height: auto;
+			border-top: 1px solid #7F7E7E;
+			margin: 0 auto;
+			text-align: center;
+			display: flex;
+		 justify-content: center;
+		 align-items: center;
+		 flex-flow: wrap;
+		 width: 100%;
 }
 footer span {
-	font-family: 'Galada', cursive;
-	text-transform: lowercase;
-	color: #77a466;
-	font-size: .875em;
+			font-family: 'Galada', cursive;
+			text-transform: lowercase;
+			color: #77a466;
+			font-size: .875em;
 }
 
 /******************media sizes********************/
@@ -190,49 +187,49 @@ footer span {
 @media all and (min-width: 768px) {
 	/* tablet styles here*/
 
-	header h1 {
-      width: 100%;
-	}
-	header nav ul li {
-	  display: block;
-	}
-	
-	.section-one,
-	.section-two,
-    .section-three {
-	   height: auto;
-	   width: 33%;
-	   align-self: flex-start;
-    }
+		header h1 {
+	    width: 100%;
+		}
+		header nav ul li {
+		   display: block;
+		}
+		
+		.section-one,
+		.section-two,
+	 .section-three {
+		   height: auto;
+		   width: 33%;
+		   align-self: flex-start;
+	 }
 
 
-	.section-two {
-		border-left: 1px solid #7F7E7E;
-		border-right: 1px solid #7F7E7E;
-	}
-    .reviews {
-    	font-size: .875em;
-    }
-
+		.section-two {
+			  border-left: 1px solid #7F7E7E;
+			  border-right: 1px solid #7F7E7E;
+		}
+	 
+	 .reviews {
+	    font-size: .875em;
+	 }
 }
 
 @media all and (min-width: 1200px) {
 	/* desktop styles here*/
-	header nav ul li {
-	  display: inline;
-    }
+	 header nav ul li {
+	    display: inline;
+  }
 
-    header {
-      justify-content:space-between;    
-    }
+  header {
+     justify-content:space-between;    
+  }
 
-	header h1 {
-	   width: auto;
-	   border: none;
-	}
+	 header h1 {
+	    width: auto;
+	    border: none;
+	 }
 
-	.section-two {
-		border-left: 1px solid #7F7E7E;
-		border-right: 1px solid #7F7E7E;
-	}
+	 .section-two {
+		   border-left: 1px solid #7F7E7E;
+		   border-right: 1px solid #7F7E7E;
+	 }
 }
